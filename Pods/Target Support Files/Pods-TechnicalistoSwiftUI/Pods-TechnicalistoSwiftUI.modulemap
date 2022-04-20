@@ -1,0 +1,6 @@
+framework module Pods_TechnicalistoSwiftUI {
+  umbrella header "Pods-TechnicalistoSwiftUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
