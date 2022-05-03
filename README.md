@@ -39,12 +39,12 @@ case number1
 6️⃣ Define each TextField design and on each it add
 
 ```
-                .focused($focusedField, equals: . number1)
-                .onChange(of: number1) { newValue in
-                    if newValue.count == 1 {
-                    focusedField = . number2
-                    }
-                }
+.focused($focusedField, equals: . number1)
+.onChange(of: number1) { newValue in
+if newValue.count == 1 {
+focusedField = . number2
+}
+}
                 
 ```
 

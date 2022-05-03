@@ -42,6 +42,7 @@
 		104B7C062810C10000734DE6 = {
 			isa = PBXGroup;
 			children = (
+				1013712B2821A67B0017C4AF /* README.md */,
 				104B7C112810C10100734DE6 /* TechnicalistoSwiftUI */,
 				104B7C102810C10100734DE6 /* Products */,
 				F5C7A54451446AB173BCDB5A /* Pods */,
@@ -60,7 +61,6 @@
 		104B7C112810C10100734DE6 /* TechnicalistoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				1013712B2821A67B0017C4AF /* README.md */,
 				104B7C122810C10100734DE6 /* TechnicalistoSwiftUIApp.swift */,
 				104B7C142810C10100734DE6 /* ContentView.swift */,
 				104B7C162810C10500734DE6 /* Assets.xcassets */,
