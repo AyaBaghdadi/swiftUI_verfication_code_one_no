@@ -16,8 +16,7 @@ struct ContentView: View {
     @State var no3: String = ""
     @State var no4: String = ""
     @State var no5: String = ""
-    @FocusState private var focusedField: Field?
-
+    
     enum Field {
         case no1
         case no2
@@ -26,9 +25,10 @@ struct ContentView: View {
         case no5
     }
     
+    @FocusState private var focusedField: Field?
+    
     var body: some View {
 
-        
         VStack {
             
             Text("Technicalisto")
@@ -66,9 +66,6 @@ struct ContentView: View {
                 .cornerRadius(5.0)
                 .multilineTextAlignment(.center)
                 .keyboardType(.numberPad)
-                .introspectTextField { textField in
-                 textField.becomeFirstResponder()
-                }
                 .focused($focusedField, equals: .no2)
                 .onChange(of: no2) { newValue in
                     if newValue.count == 1 {
@@ -84,9 +81,6 @@ struct ContentView: View {
                 .cornerRadius(5.0)
                 .multilineTextAlignment(.center)
                 .keyboardType(.numberPad)
-                .introspectTextField { textField in
-                 textField.becomeFirstResponder()
-                }
                 .focused($focusedField, equals: .no3)
                 .onChange(of: no3) { newValue in
                     if newValue.count == 1 {
@@ -102,9 +96,6 @@ struct ContentView: View {
                 .cornerRadius(5.0)
                 .multilineTextAlignment(.center)
                 .keyboardType(.numberPad)
-                .introspectTextField { textField in
-                 textField.becomeFirstResponder()
-                }
                 .focused($focusedField, equals: .no4)
                 .onChange(of: no4) { newValue in
                     if newValue.count == 1 {
@@ -120,9 +111,6 @@ struct ContentView: View {
                 .cornerRadius(5.0)
                 .multilineTextAlignment(.center)
                 .keyboardType(.numberPad)
-                .introspectTextField { textField in
-                 textField.becomeFirstResponder()
-                }
                 .focused($focusedField, equals: .no5)
             
 
